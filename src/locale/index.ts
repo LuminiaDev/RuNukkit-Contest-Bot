@@ -1,12 +1,16 @@
 import { FluentBundle, FluentResource, FluentVariable } from '@fluent/bundle';
+import { FALLBACK_LANGUAGE } from '../api/constants';
 import * as fs from 'fs';
 import path from 'path';
-import { FALLBACK_LANGUAGE } from '../api/constants';
 
 /**
  * Directory with all translations
  */
 export const localesDir = path.join(__dirname, 'locales');
+
+export type Localizer = {
+    t: (key: string, args?: Record<string, FluentVariable>) => string;
+}
 
 export class Locale {
     private bundles: Map<string, FluentBundle> = new Map();
@@ -33,18 +37,18 @@ export class Locale {
         const bundle = this.bundles.get(locale) || this.bundles.get(this.defaultLocale)!;
         const message = bundle.getMessage(key);
         if (message?.value) {
-            return bundle.formatPattern(message.value, args);
+            return bundle.formatPattern(message.value, args).replace(/\\/g, '');
         }
         return key; // Fallback to the key if the translation is missing
     }
 
-    public getLocale(locale: string) {
+    public getLocale(locale: string): Localizer {
         const bundle = this.bundles.get(locale) || this.bundles.get(this.defaultLocale)!;
         return {
             t: (key: string, args: Record<string, FluentVariable> = {}) => {
                 const message = bundle.getMessage(key);
                 if (message?.value) {
-                    return bundle.formatPattern(message.value, args);
+                    return bundle.formatPattern(message.value, args).replace(/\\/g, '');
                 }
                 return key;
             },
