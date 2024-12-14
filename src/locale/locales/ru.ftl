@@ -1,7 +1,7 @@
 <#--  Описание команд и их сообщения  -->
 commands-makecontestpost-description = Создать сообщение о конкурсе
 commands-makecontestpost-post-failed = Не удалось создать сообщение с публикацией
-commands-makepluginpost-post-created = Публикация успешно создана: [Публикация]({ $url })
+commands-makecontestpost-post-created = Публикация успешно создана: [Публикация]({ $url })
 commands-makecontestpost-post-message =
     # :tada: RuNukkit исполняется 2 года!
 
@@ -25,8 +25,8 @@ commands-makecontestpost-post-message =
     1. :first_place: **Хостинг с 8GB RAM** под любые задачи на 1 месяц.
     2. :second_place: **Хостинг с 6GB RAM** под любые задачи на 1 месяц.
     3. :third_place: **Хостинг с 4GB RAM** под любые задачи на 1 месяц.
-    4. **Discord Nitro Full** на 1 месяц.
-    5. **Discord Nitro Basic** на 1 месяц.
+    4. **Discord Nitro Full** или **Telegram Premium** на 1 месяц.
+    5. **Discord Nitro Basic** или **Telegram Premium** на 1 месяц.
 
     ## Как участвовать?
 
