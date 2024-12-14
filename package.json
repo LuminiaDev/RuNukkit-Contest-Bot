@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "Discord bot for contests in RuNukkit",
   "dependencies": {
+    "@fluent/bundle": "^0.18.0",
     "@types/node": "^22.10.2",
     "discord.js": "^14.16.3",
     "dotenv": "^16.4.7",
