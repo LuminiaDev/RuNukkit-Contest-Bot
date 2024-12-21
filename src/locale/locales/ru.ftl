@@ -22,9 +22,9 @@ commands-makecontestpost-post-message =
 
     Для победителей предусмотрено **5 призовых мест**:
 
-    1. :first_place: **Хостинг с 8GB RAM** под любые задачи на 1 месяц.
-    2. :second_place: **Хостинг с 6GB RAM** под любые задачи на 1 месяц.
-    3. :third_place: **Хостинг с 4GB RAM** под любые задачи на 1 месяц.
+    1. :first_place: **VPS с 16GB RAM, 8 vCore (i9-12900k)** под любые задачи на 1 месяц.
+    2. :second_place: **VPS с 12GB RAM, 6 vCore (i9-12900k)** под любые задачи на 1 месяц.
+    3. :third_place: **VPS с 8GB RAM, 4 vCore (i9-12900k)** под любые задачи на 1 месяц.
     4. **Discord Nitro Full** или **Telegram Premium** на 1 месяц.
     5. **Discord Nitro Basic** или **Telegram Premium** на 1 месяц.
 
@@ -59,6 +59,8 @@ commands-makepluginpost-format-post-message =
 
     4. **Файл или ссылка на исходный код**  
     Добавьте файл с исходным кодом плагина (например, `.zip`) или предоставьте ссылку на репозиторий (например, GitHub).
+
+    -# Если плагин не является рабочим, он не будет принят, пока не будет исправлен
 commands-makepluginpost-plugin-post-message = 
     ## :book: Пример публикации:
 
